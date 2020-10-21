@@ -68,7 +68,7 @@ export const SearchStyle = styled.div`
     font-weight: 400;
   }
 `;
-const ErrorWrapper = styled.article`
+export const ErrorStyle = styled.article`
   position: absolute;
   width: 90vw;
   top: 0;
