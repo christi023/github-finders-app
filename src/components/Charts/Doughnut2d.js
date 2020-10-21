@@ -19,26 +19,30 @@ const ChartComponent = ({ data }) => {
   const chartConfigs = {
     type: 'doughnut2d', // The chart type
     width: '100%', // Width of the chart
-    height: '400', // Height of the chart
+    height: '350', // Height of the chart
     dataFormat: 'json', // Data type
     dataSource: {
       // Chart Configuration
       chart: {
         baseFont: 'Open Sans',
         baseFontSize: 16,
-        baseFontColor: '#617d98',
+        baseFontColor: '#fff',
         caption: 'Stars Per Language',
-        captionFontColor: '#102a42',
+        captionFontColor: '#fff',
         captionFontBold: 0,
         captionFontSize: 20,
         captionFont: 'Roboto',
         decimals: 0,
-        doughnutRadius: '35%',
+        doughnutRadius: '45%',
+        pieRadius: '45%',
         smartLineColor: '#617d98',
         showShadow: 0,
         showPlotBorder: 0,
+        showBorder: 0,
         showPercentValues: 0,
         theme: 'candy',
+        use3DLighting: 0,
+        useDataPlotColorForLabels: 0,
       },
       // Chart Data
       data,
