@@ -19,7 +19,7 @@ export const NavbarStyle = styled.nav`
     border-radius: 50%;
     object-fit: cover;
   }
-  button {
+  /*button {
     background: transparent;
     border: transparent;
     font-size: 1.2rem;
@@ -28,4 +28,18 @@ export const NavbarStyle = styled.nav`
     color: var(--clr-grey-5);
     cursor: pointer;
   }
+  */ button {
+      border-radius: 5px;
+      border-color: transparent;
+      padding: 0.25rem 0.5rem;
+      text-transform: capitalize;
+      letter-spacing: var(--spacing);
+      background: var(--clr-primary-5);
+      color: var(--clr-white);
+      transition: var(--transition);
+      cursor: pointer;
+      &:hover {
+        background: var(--clr-primary-8);
+        color: var(--clr-primary-1);
+      }
 `;
