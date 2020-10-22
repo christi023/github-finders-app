@@ -42,8 +42,8 @@ const UserInfo = () => {
   return (
     <section className="section">
       <InfoStyle className="section-center">
-        {items.map((item) => {
-          return <Item key={item.id} {...item}></Item>;
+        {items.map((item, id) => {
+          return <Item key={id} {...item}></Item>;
         })}
       </InfoStyle>
     </section>
