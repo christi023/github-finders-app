@@ -41,7 +41,6 @@ const Repos = () => {
       return { ...item, value: item.stars };
     })
     .slice(0, 5);
-  console.log(mostPopular);
 
   // stars, forks
   let { stars, forks } = repos.reduce(
@@ -56,7 +55,6 @@ const Repos = () => {
       forks: {},
     },
   );
-  console.log(stars);
 
   stars = Object.values(stars).slice(-5).reverse();
   forks = Object.values(forks).slice(-5).reverse();
